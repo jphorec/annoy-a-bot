@@ -1,6 +1,8 @@
 # Annoy-a-Bot
 React-native project to communicate to an annoyatron over bluetooth using a mobile app. 
 
+![alt text](http://i.imgur.com/yoLDiLj.png)
+
 ## Setup
 Follow the instructions on the getting started tutorial here: https://facebook.github.io/react-native/docs/getting-started.html
 
