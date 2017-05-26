@@ -34,16 +34,16 @@ export default class Home extends Component {
   render() {
     return (
       <View style={{marginTop:20}}>
-      <TouchableOpacity style={styles.container} >
+      <View style={styles.container} >
             <Text style={styles.onOff}>
-            Enabled 
+            Enable 
             </Text>
             <View style={{flex: 1}} />
             <Switch
              style={{marginRight: 18}}
              onValueChange={(value) => this.setState({falseSwitchIsOn: value})}
              value={this.state.falseSwitchIsOn} />
-      </TouchableOpacity>
+      </View>
      <TouchableOpacity style={styles.container} onPress={() => {Actions.annoyMode();}}>
         <Text style={styles.annoyMode} >
         Annoy Mode
@@ -53,7 +53,7 @@ export default class Home extends Component {
         {this.state.annoyMode}
         </Text>
     </TouchableOpacity>
-    <TouchableOpacity style={styles.container} >
+    <TouchableOpacity style={styles.container} onPress={() => {Actions.frequency();}}>
         <Text style={styles.frequency}>
         Frequency
         </Text>
