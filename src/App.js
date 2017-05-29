@@ -7,8 +7,12 @@ import { Router, Scene } from 'react-native-router-flux';
 import Home from './components/Home';
 import AnnoyModeSelect from './components/AnnoyModeSelect';
 import FrequencySelect from './components/FrequencySelect';
+import SplashScreen from '@remobile/react-native-splashscreen';
 
 export default class App extends React.Component {
+  componentDidMount() {
+      SplashScreen.hide();
+  }
   render() {
     return (
       <Router>
